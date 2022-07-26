@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    /* css reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('images/gymgirl.jpg');
+        font-family: "Baloo Bhai 2 script=latin rev=1";
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        /* border:12px solid rgb(128, 0, 38); */
+        outline-offset: 8px;
+        display: inline-block;
+        position: fixed;
+        left: 20px;
+        top: 10px;
+
+
+
+    }
+
+    .left img {
+        width: 450px;
+        height: 444px;
+        padding: 10px;
+        margin: 5px;
+
+
+    }
+
+    .left p {
+        color: rgb(73, 162, 165);
+        font-variant: small-caps;
+        font-size: 80px;
+        font-family: sans-serif, monospace;
+        margin: auto;
+        font-weight: bold;
+
+    }
+
+    .mid {
+        /* border:15px solid rgb(77, 5, 77); */
+        margin: 60px auto;
+        display: block;
+        width: 40%;
+        height: 155px;
+        background-color: rgb(218, 207, 207);
+        
+       
+    }
+
+    .right {
+        display: inline-block;
+        position: fixed;
+        right: 280px;
+        top: 10px;
+
+    }
+
+    .btn {
+        padding: 3px;
+        border: 5px solid rgb(145, 21, 21);
+        color: cornsilk;
+        background-color: black;
+        margin: 5px;
+        display: block;
+        width: 850px;
+        height: 200px;
+        font-family: sans-serif, monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        font-variant: small-caps;
+        box-sizing: border-box;
+        border-radius: 9px;
+    }
+
+    .btn:hover {
+        color: blue;
+        background-color: rgb(158, 151, 151);
+    }
+  
+
+    li {
+
+        display: inline-block;
+        padding: 34px 30px;
+
+
+    }
+
+    a {
+        padding: 34px 30px;
+        text-decoration: none;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    a:hover,
+    a.active {
+        text-decoration: underline;
+        color: crimson;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    .container {
+        display: block;
+        position: absolute;
+        top: 750px;
+        left: 350px;
+        font-size: 90px;
+        border: 3px solid white;
+        /* padding: 35px; */
+        box-sizing: border-box;
+        width: 33%;
+        height: 106%;
+        background-color: black;
+
+    }
+
+    h1 {
+        font-variant: small-caps;
+        color: rgb(21, 216, 3);
+        padding: 10px 65px;
+        margin: 5px;
+
+    }
+
+    h2 {
+
+        font-size: 210px;
+        padding: 0px 300px;
+        color: rgb(240, 197, 8);
+    }
+
+    .container p {
+        
+        font-variant: small-caps;
+        color: rgb(216, 3, 120);
+        padding: 2px 200px;
+        font-size: 200px;
+        text-decoration: underline;
+    }
+    .form-group input{
+        font-family: sans-serif, monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        box-sizing: border-box;
+        border-radius: 9px;
+        width:90%;
+        padding: 40px 20px;
+        border:6px solid black;
+        margin: 4px;
+
+    }
+    .submit {
+        position:absolute;
+        right: 5px;
+        bottom: 45px;
+        font-family: sans-serif, monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        padding:  40px 60px;
+        border: 4px solid black;
+        box-sizing: border-box;
+        margin:25px;
+        width: 450px;
+        
+    }
+    .reset {
+        position:absolute;
+        left: 5px;
+        bottom: 45px;
+        font-family: sans-serif, monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        padding:  40px 60px;
+        border: 4px solid black;
+        box-sizing: border-box;
+        margin:25px;
+        width: 450px;
+    }
+    
+    .reset:hover{
+        background-color: crimson;
+    }
+    .submit:hover{
+        background-color: green;
+    }
+    footer{
+        font-size: 60px;
+        font-style: italic;
+        color:rgb(226, 196, 23);
+        font-weight: bold;
+        position: absolute;
+        display: inline-block;
+        right: 250px;
+        top: 2810px;
+        
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left div for logo -->
+        <div class="left">
+            <img src="https://image.shutterstock.com/image-vector/fitness-gym-logo-design-template-260nw-1663692082.jpg"
+                alt="logo" id="mylogo">
+            <p>Sudipta GYM</p>
+        </div>
+        <!-- mid div for navigation -->
+        <div class="mid">
+            <ul>
+                <div class="navbar">
+                    <li> <a href="home" class="active">HOME</a></li>
+                    <li> <a href="contact">CONTACT US</a></li>
+                    <li> <a href="gym calculator">GYM CALCULATOR</a></li>
+                    <li> <a href="about us">ABOUT US</a></li>
+
+                </div>
+            </ul>
+        </div>
+        <!-- right div for buttons -->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us </button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Jamshedpur now</h1>
+        <h2> 25% off</h2>
+        <p> Register Now</p>
+        <form action="backend.php">
+
+           <div class="form-group">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+           </div>
+
+             <div class="form-group">
+            <input type="email" id="myemail" name="email" placeholder="Your email..">
+             </div>
+            
+            <div class="form-group">
+            <input type="number" id="phoneno" name="phone" placeholder="Your contact number..">
+            </div>
+            
+                <button class="submit">SUBMIT </button>
+                <button class="reset">RESET</button>
+            
+        
+        
+            
+
+        </form>
+
+    </div>
+    <footer>
+        <h3>Address:</h3>
+        <p>Rajendra Nagar,</p>
+        <p>Bishtupur,Jamshedpur</p>
+    </footer>
+
+</body>
+
+</html>
